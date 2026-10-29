@@ -1,0 +1,3 @@
+(function(){var n=document.getElementById('nav');function on(){n.classList.toggle('is-solid',window.scrollY>20)}on();window.addEventListener('scroll',on,{passive:true});var y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();
+function go(){var id=location.hash.slice(1);var el=id&&document.getElementById(id);requestAnimationFrame(function(){if(!el){window.scrollTo({top:0,behavior:'instant'});return}if(el.classList.contains('prog-view')){window.scrollTo({top:0,behavior:'instant'});return}window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-72,behavior:'instant'})})}
+window.addEventListener('hashchange',go);if(location.hash)window.addEventListener('load',go);})();
