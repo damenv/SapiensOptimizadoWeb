@@ -193,6 +193,8 @@ a:hover{color:var(--ink)}
 .schedule__row + .schedule__row{padding-top:10px;border-top:1px solid var(--line)}
 .schedule__day{font-family:var(--font-display);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:14px}
 .schedule__time{color:var(--ink-dim)}
+.schedule__range{color:var(--green);font-size:15px;padding-bottom:4px}
+.schedule__dates{flex-basis:100%;font-size:13px;color:var(--ink-dim)}
 
 /* ── 5. Testimonios ──────────────────────────────────────── */
 .quote{gap:20px}
